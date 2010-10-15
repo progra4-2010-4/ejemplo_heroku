@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8" /> 
+        <title>Hackernotes</title>
+        <link rel="stylesheet" type="text/css" href="/base.css"/>
+    </head>
+    <body> 
+        <h1>Hackernotes</h1>
+        <h2>Elevator Pitch</h2>
+        <p>Poder tomar notas <em>con formato</em> y rápidamente: sin muchos menús y opciones. Y hacerlo desde el escritorio</p>
+
+        <h2>El problema</h2>
+        <p>
+            Las soluciones que hay ahora no toman en cuenta la urgencia: quiero poder crear una nota nueva sin mucho relajo,
+            para poder sólo abrir la página, escribir y salirme, confiando en que el programa guarda y formatea por mí.
+            No necesito organizar mis notas. Ni compartirlas, ni tener botoncitos para cosas tan simples como listas. Soy
+            un programador, sé escribir en <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>
+            además muchas de mis notas tienen código: quiero escribir rápidamente y que aún así se vean pinta.
+        </p>
+        
+        <h2>La solución</h2>
+        <p>
+            Automatizar el proceso de marcado y fechado. Incluir formateado con cosas como markdown/textile, además de 
+            coloreo de sintaxis. Mantenerlo simple redirigiendo a una nueva nota en cuanto entre a la página, 
+            usar javascript para autoguardado periódico y cuando la cierre.
+        </p>
+
+        <h2>Los lamers con los que compito</h2>
+        <dl>
+            <dt><a href="http://www.evernote.com">Evernote </a></dt>
+            <dd>Tiene autoguardado pero es un relajo hacer/ver notas y formatearlas (usa WYSIWYG)</dd>
+            
+            <dt><a href="http://www.google.com/notebook">Google Notebook </a>(<em>Mi enemigo principal</em>)</dt>
+            <dd>Es más rápido crear notas y organiza en notebooks. A veces es lento y también tiene WYSIWYG.
+            Requiere g-account</dd>
+
+            <dt><a href="http://www.notezz.com/notes/">Notezz</a></dt>
+            <dd>Este es genial, es fácil registrarse y todo, pero carece de marcado y no sé dónde diablos verlas</dd>
+        </dl>
+    
+        <h2>Retos técnicos</h2>
+        <ol>
+            <li>Marcado y coloreo de sintaxis</li>
+            <li>Crear notas en cuanto se entra</li>
+            <li>Identificación de usuarios</li>
+            <li>Autoguardado</li>
+        </ol>
+    </body>
+</html>
