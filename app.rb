@@ -14,6 +14,6 @@ get('/codewar'){send_file "cw.html"}
 get('/mailmaniac'){send_file "mm.html"}
 =end
 
-get('/'){erb :index, :layout=>false}
+get('/'){erb :index}
 
-eval %w[/hackernotes /codewar /mailmaniac].collect{|idea| "get('#{idea}'){erb :#{idea[1..-1]}}"}.join("; ")
+eval %w[/hackernotes /codewar /mailmaniac].collect{|idea| "get('#{idea}'){@title = '#{idea.capitalize}'; erb :#{idea[1..-1]}}"}.join("; ")
