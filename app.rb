@@ -8,10 +8,7 @@ require 'sinatra'
 #lo deberias abstraer en una funcion, clase, o ... en casos extremos, expresiones divertidas 
 #como la de abajo
 get('/'){send_file "index.html"}
-
-get('/hackernotes'){send_file "hn.html"}
-get('/codewar'){send_file "cw.html"}
-get('/mailmaniac'){send_file "mm.html"}
+Esta otra linea
 =end
 
 get('/'){erb :index}
