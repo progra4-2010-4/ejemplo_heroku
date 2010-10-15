@@ -12,5 +12,4 @@ Esta otra linea
 =end
 
 get('/'){erb :index}
-puts "hola"
 eval %w[/hackernotes /codewar /mailmaniac].collect{|idea| "get('#{idea}'){@title = '#{idea.capitalize}'; erb :#{idea[1..-1]}}"}.join("; ")
